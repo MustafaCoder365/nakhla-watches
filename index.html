@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>نخلة — NAKHLA</title>
+<meta name="description" content="نخلة — ساعات عراقية فاخرة. وقتك… من أرض الرافدين.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Reem+Kufi:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#7C5CFF;--acc2:#C4B5FF;--bg:#0B0907;--bg2:#14100C;--gold:#D9B26A;--gold2:#F3DCA6;--ink:#F4EDE1;--mute:#A99E8C;--line:rgba(217,178,106,.18);--date:#5A3A22}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{overflow-x:clip;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+.lat{font-family:"Cormorant Garamond",serif;letter-spacing:.35em}
+.kufi{font-family:"Reem Kufi","IBM Plex Sans Arabic",sans-serif}
+.gold{background:linear-gradient(100deg,#B8893F,#F3DCA6 45%,#C99A4E 70%,#F3DCA6);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* nav */
+.nav{position:fixed;top:0;inset-inline:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:18px 22px;transition:.4s}
+.nav.solid{background:rgba(11,9,7,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.mark{display:flex;align-items:center;gap:10px}
+.mark svg{width:26px;height:30px}
+.mark b{font-size:15px;font-weight:600}
+.bag{position:relative;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center}
+.bag svg{width:20px;height:20px;stroke:var(--gold)}
+.bag i{position:absolute;top:-4px;left:-4px;min-width:20px;height:20px;border-radius:10px;background:var(--acc);color:#fff;font:700 11px/20px "IBM Plex Sans Arabic";font-style:normal;text-align:center;padding:0 5px}
+/* hero */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;display:flex;align-items:flex-end}
+.hero .bgimg{position:absolute;inset:0;background:url(img/macro.jpg) center/cover;transform:scale(1.25);animation:hz 9s cubic-bezier(.2,.7,.2,1) forwards;filter:brightness(.8)}
+@keyframes hz{to{transform:scale(1.02)}}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 45% at 20% 100%,rgba(124,92,255,.45),transparent 70%),linear-gradient(180deg,rgba(11,9,7,.55) 0%,rgba(11,9,7,0) 30%,rgba(11,9,7,.2) 55%,var(--bg) 96%)}
+.sweep{position:absolute;inset:0;z-index:1;background:linear-gradient(115deg,transparent 38%,rgba(150,120,255,.28) 47%,rgba(255,226,160,.22) 52%,transparent 62%);background-size:250% 100%;animation:sw 4.5s 1s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes sw{0%{background-position:120% 0}60%,100%{background-position:-60% 0}}
+.hero .in{position:relative;z-index:2;padding:0 26px 9svh;width:100%}
+.eyebrow{font-size:12px;color:var(--acc2);letter-spacing:.4em;margin-bottom:14px;opacity:0;animation:up .9s .3s forwards}
+.hero h1{font-size:92px;line-height:1;font-weight:700;opacity:0;animation:up 1s .5s forwards}
+.hero .en{font-size:20px;color:var(--gold2);margin-top:6px;opacity:0;animation:up 1s .7s forwards}
+.hero p{font-size:19px;color:#e9dfcf;margin:18px 0 26px;max-width:420px;opacity:0;animation:up 1s .9s forwards}
+.cta{display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 28px;border-radius:999px;background:linear-gradient(100deg,#5B3DFF,#9B7DFF 55%,#6C8BFF);color:#fff;font-weight:600;font-size:16px;opacity:0;animation:up 1s 1.1s forwards;box-shadow:0 12px 44px -8px rgba(124,92,255,.75)}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.scrollhint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;width:1px;height:46px;background:linear-gradient(var(--gold),transparent);animation:sh 2s infinite}
+@keyframes sh{0%{opacity:0;transform:translate(-50%,-10px)}50%{opacity:1}100%{opacity:0;transform:translate(-50%,10px)}}
+/* sections */
+section{padding:84px 22px;position:relative;overflow:hidden}
+body{overflow-x:hidden}
+section::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(124,92,255,.22),transparent 65%);top:20px;left:-160px;pointer-events:none;filter:blur(10px)}
+section:nth-of-type(even)::before{left:auto;right:-160px;top:40%}
+.model{box-shadow:0 30px 60px -30px rgba(124,92,255,.45)}
+.model:hover{border-color:rgba(124,92,255,.6)}
+.h{margin-bottom:30px}
+.h small{display:block;color:var(--acc2);font-size:12px;letter-spacing:.35em;margin-bottom:10px}
+.h h2{font-size:40px;line-height:1.2;font-weight:700}
+.h p{color:var(--mute);margin-top:10px;font-size:16px;line-height:1.8}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.on{opacity:1;transform:none}
+/* collection */
+.models{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1180px;margin:0 auto}
+.model{position:relative;border-radius:26px;overflow:hidden;background:var(--bg2);border:1px solid var(--line);cursor:pointer}
+.model .ph{aspect-ratio:4/5;overflow:hidden}
+.model .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.model:hover .ph img{transform:scale(1.06)}
+.model .bd{position:absolute;inset-inline:0;bottom:0;padding:22px;background:linear-gradient(transparent,rgba(8,6,4,.92) 45%)}
+.model h3{font-size:24px;font-weight:700}
+.model .s{color:var(--mute);font-size:14px;margin-top:2px}
+.model .row{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.price{font-size:20px;font-weight:600;color:var(--gold2)}
+.price small{font-size:13px;color:var(--mute);font-weight:400}
+.pill{height:42px;padding:0 18px;border-radius:999px;border:0;background:var(--acc);color:#fff;box-shadow:0 8px 24px -8px rgba(124,92,255,.8);font-size:14px;font-weight:600;display:inline-flex;align-items:center}
+.wrap{max-width:1180px;margin:0 auto}
+/* story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.story .ph{border-radius:30px;overflow:hidden;aspect-ratio:1/1}
+.story .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.story .rv.on .ph img,.story .ph.on img{transform:scale(1)}
+.quote{font-size:30px;line-height:1.6;font-weight:600}
+.quote em{font-style:normal}
+.uv{background:linear-gradient(100deg,#8B6CFF,#C4B5FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sig{margin-top:18px;color:var(--mute)}
+/* specs */
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.spec{border:1px solid rgba(124,92,255,.35);border-radius:22px;padding:22px 18px;background:linear-gradient(160deg,rgba(124,92,255,.22),rgba(124,92,255,.02) 70%)}
+.spec b{display:block;font-size:30px;font-weight:600}
+.spec span{color:var(--mute);font-size:14px}
+.macro{position:relative;border-radius:30px;overflow:hidden;margin-bottom:18px;aspect-ratio:16/9}
+.macro img{width:100%;height:100%;object-fit:cover}
+/* box */
+.boxs{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.boxs .ph{border-radius:30px;overflow:hidden}
+.engr{display:inline-flex;gap:8px;align-items:center;margin-top:18px;padding:12px 18px;border-radius:16px;border:1px dashed var(--acc);color:var(--acc2);background:rgba(124,92,255,.08)}
+/* footer */
+footer{padding:50px 22px 110px;text-align:center;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer .mark{justify-content:center;margin-bottom:12px}
+/* sticky buy */
+.sticky{position:fixed;inset-inline:14px;bottom:14px;z-index:35;display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px 10px 10px 18px;border-radius:22px;background:rgba(20,16,12,.92);backdrop-filter:blur(14px);border:1px solid var(--line);transform:translateY(120%);transition:.45s cubic-bezier(.2,.7,.2,1)}
+.sticky.on{transform:none}
+.sticky img{width:46px;height:46px;border-radius:12px;object-fit:cover}
+.sticky .t{flex:1;font-size:14px}
+.sticky .t b{display:block;font-size:15px}
+/* sheet */
+.scrim{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:.35s}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;z-index:60;inset-inline:0;bottom:0;max-height:92svh;overflow:auto;background:#120E0A;border-radius:28px 28px 0 0;border-top:1px solid var(--line);transform:translateY(105%);transition:transform .5s cubic-bezier(.2,.8,.2,1);padding:10px 22px 26px}
+.sheet.on{transform:none}
+.grab{width:44px;height:5px;border-radius:3px;background:#3a3027;margin:6px auto 14px}
+.sh-img{border-radius:22px;overflow:hidden;aspect-ratio:1/1;margin-bottom:16px;position:relative}
+.sh-img img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.sheet h3{font-size:28px}
+.sheet .s{color:var(--mute);margin:2px 0 12px}
+.opts{display:flex;gap:10px;margin:14px 0 18px}
+.opt{flex:1;padding:10px 6px;border-radius:16px;border:1px solid var(--line);text-align:center;font-size:13px;color:var(--mute);transition:.25s}
+.opt i{display:block;width:26px;height:26px;border-radius:50%;margin:0 auto 6px;border:2px solid #000}
+.opt.on{border-color:var(--acc);color:#fff;background:rgba(124,92,255,.18);box-shadow:0 0 0 3px rgba(124,92,255,.18)}
+.f{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.f label{font-size:13px;color:var(--mute)}
+.f input,.f select{height:52px;border-radius:15px;border:1px solid #3a3027;background:#0d0a07;color:var(--ink);padding:0 14px;font:inherit;outline:none;transition:.25s}
+.f input:focus,.f select:focus{border-color:var(--acc);box-shadow:0 0 0 4px rgba(124,92,255,.2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.buy{width:100%;height:58px;border-radius:18px;background:linear-gradient(100deg,#5B3DFF,#9B7DFF 55%,#6C8BFF);color:#fff;box-shadow:0 14px 40px -10px rgba(124,92,255,.8);font-weight:700;font-size:17px;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:6px}
+.note{font-size:12px;color:var(--mute);text-align:center;margin-top:10px}
+.toast{position:fixed;top:20px;left:50%;transform:translate(-50%,-30px);opacity:0;z-index:80;background:#1a1530;border:1px solid var(--acc);color:#fff;padding:12px 20px;border-radius:14px;transition:.35s;pointer-events:none;font-size:14px}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (max-width:860px){
+ .hero h1{font-size:76px}
+ .models{grid-template-columns:1fr;gap:16px}
+ .model .ph{aspect-ratio:1/1.05}
+ .story,.boxs{grid-template-columns:1fr}
+ .specs{grid-template-columns:1fr 1fr}
+ .h h2{font-size:34px}
+ .quote{font-size:25px}
+ .sticky{display:flex}
+}
+@media (min-width:861px){.sheet{inset-inline:auto;left:50%;width:480px;margin-left:-240px;bottom:20px;border-radius:28px;border:1px solid var(--line)}}
+
+/* ===== BREAK THE GOLD: ultraviolet x acid-lime ===== */
+:root{--uv:#5B2BFF;--uv2:#8F6BFF;--lime:#D4FF3A;--deep:#120A2E}
+body{background:var(--deep)}
+.hero .bgimg{filter:brightness(.85) contrast(1.1)}
+.hero .duo{position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,#5B2BFF 0%,#1B0B4A 55%,#0B0716 100%);mix-blend-mode:color;opacity:.82}
+.hero .duo2{position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 50% 30%,rgba(212,255,58,.0) 0,rgba(212,255,58,.0) 30%,transparent 31%);}
+.hero::after{background:linear-gradient(180deg,rgba(18,10,46,.35) 0%,transparent 30%,rgba(18,10,46,.3) 55%,var(--deep) 97%)!important}
+.hero h1{color:transparent;-webkit-text-stroke:2px var(--lime);background:none!important;font-size:120px;letter-spacing:2px}
+.hero h1.gold{-webkit-background-clip:initial;background-clip:initial}
+.eyebrow{color:var(--lime)!important}
+.hero .en{color:#fff}
+.cta,.buy{background:var(--lime)!important;color:#0d0820!important;box-shadow:0 0 0 0 rgba(212,255,58,.6),0 14px 40px -10px rgba(212,255,58,.55)!important;animation:up 1s 1.1s forwards,pulse 2.4s 2.2s infinite}
+.buy{animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,255,58,.55)}70%{box-shadow:0 0 0 16px rgba(212,255,58,0)}100%{box-shadow:0 0 0 0 rgba(212,255,58,0)}}
+.ticker{position:relative;z-index:3;background:var(--lime);color:#0d0820;transform:rotate(-3deg);margin:-26px -20px 10px;padding:14px 0;overflow:hidden;white-space:nowrap;box-shadow:0 20px 50px -20px rgba(212,255,58,.6)}
+.ticker div{display:inline-block;animation:tk 14s linear infinite;font:700 22px "Reem Kufi","IBM Plex Sans Arabic";letter-spacing:1px}
+.ticker div span{margin:0 18px}
+.ticker div b{font:600 20px "Cormorant Garamond";letter-spacing:.3em}
+@keyframes tk{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+#collection{background:linear-gradient(180deg,var(--deep),#1B0B4A 60%,var(--deep))}
+.model{border:1px solid rgba(143,107,255,.45)!important;background:#160C38;box-shadow:0 30px 70px -30px rgba(91,43,255,.8)!important}
+.model .bd{background:linear-gradient(transparent,rgba(18,10,46,.95) 45%)!important}
+.pill{background:var(--lime)!important;color:#0d0820!important;box-shadow:none!important}
+.h small{color:var(--lime)!important}
+.uv{background:none!important;-webkit-text-fill-color:var(--lime);color:var(--lime)}
+.limesec{background:var(--lime);color:#0d0820}
+.limesec .h small{color:#5B2BFF!important}
+.limesec .h h2{color:#0d0820}
+.limesec .uv{-webkit-text-fill-color:#5B2BFF;color:#5B2BFF}
+.limesec .spec{background:#0d0820!important;border:0!important;color:#fff}
+.limesec .spec b{-webkit-text-fill-color:var(--lime);background:none}
+.limesec .spec span{color:#b9b2d6}
+.limesec .macro{box-shadow:12px 12px 0 #5B2BFF;border-radius:26px}
+.limesec::before,.limesec::after{display:none}
+.story .ph{box-shadow:-14px 14px 0 var(--uv);border-radius:30px}
+.boxs .ph{box-shadow:14px 14px 0 var(--lime);border-radius:30px}
+.engr{border-color:var(--lime)!important;color:var(--lime)!important;background:rgba(212,255,58,.08)!important}
+.sticky{background:rgba(27,11,74,.92)!important;border-color:rgba(143,107,255,.5)!important}
+.sheet{background:#140A33!important;border-color:rgba(143,107,255,.4)!important}
+.f input,.f select{background:#0d0820!important;border-color:#3a2a75!important}
+.opt.on{border-color:var(--lime)!important;background:rgba(212,255,58,.1)!important;box-shadow:none!important;color:var(--lime)!important}
+.nav.solid{background:rgba(18,10,46,.85)!important;border-color:rgba(143,107,255,.3)!important}
+.bag i{background:var(--lime)!important;color:#0d0820!important}
+footer{border-color:rgba(143,107,255,.3)}
+.sweep{background:linear-gradient(115deg,transparent 40%,rgba(212,255,58,.18) 50%,transparent 60%)!important;background-size:250% 100%!important}
+.cursorblob{position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(212,255,58,.35),transparent 65%);z-index:1;mix-blend-mode:screen;animation:blob 7s ease-in-out infinite alternate;top:22%;right:-60px}
+@keyframes blob{to{transform:translate(-180px,140px) scale(1.3)}}
+@media (max-width:860px){.hero h1{font-size:104px}}
+
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+ <div class="mark"><svg viewBox="0 0 26 30" fill="none"><path d="M13 29V12" stroke="#D9B26A" stroke-width="1.6" stroke-linecap="round"/><path d="M13 12c-3-4-8-5-11-3 4 0 7 1 11 3Zm0 0c3-4 8-5 11-3-4 0-7 1-11 3Zm0 0c-1-5-5-8-9-8 4 2 7 5 9 8Zm0 0c1-5 5-8 9-8-4 2-7 5-9 8Zm0 0c0-4 0-7 0-10 0 3 0 6 0 10Z" fill="#D9B26A"/></svg><b class="lat gold">NAKHLA</b></div>
+ <button class="bag" id="bagBtn" aria-label="الطلب"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><i id="bagN" hidden>0</i></button>
+</nav>
+
+<header class="hero">
+ <div class="bgimg"></div><div class="duo"></div><div class="cursorblob"></div><div class="sweep"></div>
+ <div class="in">
+  <div class="eyebrow lat">EST. BAGHDAD</div>
+  <h1 class="kufi gold">نخلة</h1>
+  <div class="en lat">NAKHLA WATCHES</div>
+  <p>وقتك… من أرض الرافدين.<br>ساعات بروح عراقية وتفاصيل من ذهب.</p>
+  <a class="cta" href="#collection">اكتشف المجموعة <span>←</span></a>
+ </div>
+ <div class="scrollhint"></div>
+</header>
+
+<div class="ticker"><div><span>نخلة</span><b>NAKHLA</b><span>✦</span><span>صُنع بروح بغداد</span><b>EST. 2026</b><span>✦</span><span>نخلة</span><b>NAKHLA</b><span>✦</span><span>صُنع بروح بغداد</span><b>EST. 2026</b><span>✦</span><span>نخلة</span><b>NAKHLA</b><span>✦</span><span>صُنع بروح بغداد</span><b>EST. 2026</b><span>✦</span><span>نخلة</span><b>NAKHLA</b><span>✦</span><span>صُنع بروح بغداد</span><b>EST. 2026</b><span>✦</span><span>نخلة</span><b>NAKHLA</b><span>✦</span><span>صُنع بروح بغداد</span><b>EST. 2026</b><span>✦</span><span>نخلة</span><b>NAKHLA</b><span>✦</span><span>صُنع بروح بغداد</span><b>EST. 2026</b><span>✦</span></div></div>
+<section id="collection">
+ <div class="wrap">
+  <div class="h rv"><small class="lat">THE COLLECTION</small><h2 class="kufi">المجموعة الأولى</h2><p>ثلاث ساعات، لكل واحدة شخصيتها.</p></div>
+  <div class="models" id="models"></div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap story">
+  <div class="ph rv"><img src="img/wrist.jpg" alt="ساعة نخلة على اليد ببغداد"></div>
+  <div class="rv">
+   <div class="h"><small class="lat">OUR STORY</small></div>
+   <div class="quote kufi">النخلة ما تنحني…<br><em class="uv">وهيج وقتك.</em></div>
+   <p class="sig">صُممت بروح بغداد: بساطة الخطوط، ودفء الذهب، وثبات النخلة.</p>
+  </div>
+ </div>
+</section>
+
+<section class="limesec">
+ <div class="wrap">
+  <div class="h rv"><small class="lat">CRAFTSMANSHIP</small><h2 class="kufi">التفاصيل <span class="uv">تحچي</span></h2></div>
+  <div class="macro rv"><img src="img/banner.jpg" alt="ساعة نخلة الكلاسيك"></div>
+  <div class="specs">
+   <div class="spec rv"><b class="gold">42mm</b><span>هيكل ذهبي مصقول</span></div>
+   <div class="spec rv"><b class="gold">5ATM</b><span>مقاومة للماء</span></div>
+   <div class="spec rv"><b class="gold">سافاير</b><span>زجاج مقاوم للخدش</span></div>
+   <div class="spec rv"><b class="gold">سنتين</b><span>ضمان</span></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap boxs">
+  <div class="ph rv"><img src="img/box.jpg" alt="علبة نخلة الفاخرة"></div>
+  <div class="rv">
+   <div class="h"><small class="lat">THE GIFT</small><h2 class="kufi">هدية تنحفظ</h2><p>كل ساعة توصلك بعلبة مخملية فاخرة، ونحفر الاسم اللي تريده على ظهر الساعة مجاناً.</p></div>
+   <div class="engr">✦ حفر اسم مجاني</div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="mark"><b class="lat gold">NAKHLA</b></div>
+ نخلة — ساعات عراقية · توصيل لكل المحافظات · الدفع عند الاستلام<br>
+ <span style="opacity:.6">علامة تجريبية من تصميم TrueStackit</span>
+</footer>
+
+<div class="sticky" id="sticky"><img src="img/main.jpg" alt=""><div class="t"><b>الكلاسيك الذهبية</b>185,000 د.ع</div><button class="cta" style="opacity:1;animation:none;height:48px;padding:0 20px" data-open="classic">اطلبها</button></div>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet" role="dialog" aria-label="طلب ساعة">
+ <div class="grab"></div>
+ <div class="sh-img"><img id="shImg" src="img/main.jpg" alt=""></div>
+ <h3 class="kufi" id="shName"></h3>
+ <div class="s" id="shSub"></div>
+ <div class="price" id="shPrice"></div>
+ <div class="opts" id="opts"></div>
+ <div class="f"><label>الاسم</label><input id="oName" placeholder="اسمك الكريم"></div>
+ <div class="two"><div class="f"><label>رقم الهاتف</label><input id="oPhone" inputmode="tel" placeholder="07xx"></div>
+ <div class="f"><label>المحافظة</label><select id="oGov"></select></div></div>
+ <div class="f"><label>الحفر على الظهر (اختياري)</label><input id="oEng" placeholder="مثلاً: إلى أبي"></div>
+ <button class="buy" id="buy">تأكيد الطلب على واتساب</button>
+ <div class="note">الدفع عند الاستلام · توصيل خلال 2–3 أيام</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const WA='9647XXXXXXXXX';
+const M={
+ classic:{n:'الكلاسيك الذهبية',s:'ميناء أسود · ذهبي · جلد',p:185000,img:'img/main.jpg',opts:[['ذهبي','#D9B26A','img/main.jpg'],['بالعلبة','#111','img/box.jpg'],['على اليد','#6b4a2c','img/wrist.jpg']]},
+ sport:{n:'الرياضية الزيتونية',s:'ميناء زيتوني · أسود مطفي · مطاط',p:165000,img:'img/sport.jpg',opts:[['زيتوني','#4d5a2a','img/sport.jpg']]},
+ pearl:{n:'اللؤلؤية',s:'للسيدات · صدف · روز غولد',p:175000,img:'img/women.jpg',opts:[['روز غولد','#d9a383','img/women.jpg']]}
+};
+const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-US')+' د.ع';
+$('#models').innerHTML=Object.entries(M).map(([k,m],i)=>`<article class="model rv" style="transition-delay:${i*.12}s" data-open="${k}"><div class="ph"><img src="${m.img}" alt="${m.n}"></div><div class="bd"><h3 class="kufi">${m.n}</h3><div class="s">${m.s}</div><div class="row"><div class="price">${fmt(m.p)}</div><span class="pill">اطلبها</span></div></div></article>`).join('');
+$('#oGov').innerHTML=['بغداد','البصرة','نينوى','أربيل','النجف','كربلاء','بابل','ديالى','الأنبار','ذي قار','السليمانية','دهوك','كركوك','واسط','ميسان','المثنى','القادسية','صلاح الدين'].map(g=>`<option>${g}</option>`).join('');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.18});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+addEventListener('scroll',()=>{$('#nav').classList.toggle('solid',scrollY>40);$('#sticky').classList.toggle('on',scrollY>innerHeight*.8)},{passive:true});
+let cur='classic',bag=0;
+function openSheet(k){cur=k;const m=M[k];$('#shName').textContent=m.n;$('#shSub').textContent=m.s;$('#shPrice').textContent=fmt(m.p);$('#shImg').src=m.img;
+ $('#opts').innerHTML=m.opts.map((o,i)=>`<button class="opt ${i?'':'on'}" data-img="${o[2]}"><i style="background:${o[1]}"></i>${o[0]}</button>`).join('');
+ $('#sheet').classList.add('on');$('#scrim').classList.add('on');$('#sheet').scrollTop=0}
+function close(){$('#sheet').classList.remove('on');$('#scrim').classList.remove('on')}
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('on'),2200)}
+document.addEventListener('click',e=>{
+ const o=e.target.closest('[data-open]');if(o){e.preventDefault();openSheet(o.dataset.open);return}
+ const op=e.target.closest('.opt');if(op){document.querySelectorAll('.opt').forEach(x=>x.classList.remove('on'));op.classList.add('on');const im=$('#shImg');im.style.opacity=0;setTimeout(()=>{im.src=op.dataset.img;im.style.opacity=1},200);return}
+ if(e.target.id==='scrim')close();
+ if(e.target.closest('#bagBtn')){if(bag)openSheet(cur);else document.getElementById('collection').scrollIntoView({behavior:'smooth'})}
+});
+$('#buy').onclick=()=>{const m=M[cur];bag=1;const n=$('#bagN');n.hidden=false;n.textContent=1;
+ const msg=`طلب جديد — ساعات نخلة 🌴\n\nالموديل: ${m.n}\nالسعر: ${fmt(m.p)}\nالحفر: ${$('#oEng').value||'بدون'}\n\nالاسم: ${$('#oName').value||'-'}\nالهاتف: ${$('#oPhone').value||'-'}\nالمحافظة: ${$('#oGov').value}`;
+ window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank');toast('✓ انرسل طلبك');};
+</script>
+</body>
+</html>
